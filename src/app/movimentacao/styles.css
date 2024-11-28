@@ -1,0 +1,7 @@
+.movimentacao{
+    background:
+      conic-gradient(from 150deg at 50% 33%,#0000,#29003d10 .5deg 60deg,#0000 60.5deg) 
+        calc(100px/2) calc(100px/1.4),
+      conic-gradient(from -30deg at 50% 66%,#0000,#2500372a .5deg 60deg,#efefef00 60.5deg);
+background-size: 100px calc(100px/1.154);
+}
