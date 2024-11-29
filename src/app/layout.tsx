@@ -10,6 +10,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" suppressHydrationWarning>
+      <head>
+        <title>Pecmanager Web</title>
+      </head>
       <body className={`antialiased`}>
         <ThemeProvider
           attribute="class"
