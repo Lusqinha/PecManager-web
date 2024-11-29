@@ -4,7 +4,7 @@ export type TransactionType = 'Entrada' | 'Saída'
 
 
 export interface Transaction {
-    id?: string
+    id: string
     category: TransactionType
     description: string
     amount: number
