@@ -1,8 +1,6 @@
 "use client"
 
 import { TransactionList } from "@/components/TransactionList";
-import { useState, useEffect } from "react";
-import { api } from "@/lib/api";
 
 export default function HistoricoPage() {
 

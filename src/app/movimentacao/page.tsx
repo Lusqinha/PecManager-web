@@ -1,6 +1,5 @@
 "use client"
 
-import { Transaction, TransactionType } from '@/types/transactions'
 import { TransactionList } from '@/components/TransactionList';
 import { TransactionForm } from '@/components/TransactionForm';
 import { BalanceSummary } from '@/components/BalaceSummary';
@@ -13,20 +12,17 @@ import './styles.css';
 
 export default function MovimentacaoPage() { 
 
-    const [transactions, setTransactions] = useState([]);
     const [current_balance, setBalance] = useState(0);
 
     useEffect(() => {
-        async function fetchTransactions() {
-            const { data } = await api.get('/transaction');
-            setTransactions(data);
+        async function fetchBalance() {
 
             const { data: { balance } } = await api.get('/balance');
 
             setBalance(balance);
         }
 
-        fetchTransactions();
+        fetchBalance();
     }, []);
 
     return (
@@ -39,7 +35,7 @@ export default function MovimentacaoPage() {
                 </div>
 
                 <div className="mt-6">
-                    <TransactionList transactions={transactions} />
+                    <TransactionList />
                 </div>
             </section>
         </div>

@@ -1,7 +1,7 @@
 import { transaction } from "@prisma/client";
 import prisma from "@/lib/db";
 
-function calculateBalance(transactions: transaction[]) :Number {
+function calculateBalance(transactions: transaction[]) :number {
     let balance = 0;
 
     transactions.forEach(transaction => {

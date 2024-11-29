@@ -8,7 +8,7 @@ import { api } from "@/lib/api"
 import { get } from "http"
 
 interface TransactionListProps { 
-    className: string | undefined,
+    className?: string,
     editable?: boolean
 }
 
