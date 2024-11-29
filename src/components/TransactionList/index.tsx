@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { PlusCircle, MinusCircle, TrashIcon } from 'lucide-react'
 import { ScrollArea } from "@/components/ui/scroll-area"
-import { Transaction } from "@/types/transactions"
+import { GETTransaction } from "@/types/transactions"
 import { useState, useEffect } from "react"
 import { cn } from "@/lib/utils"
 import { api } from "@/lib/api"
@@ -13,7 +13,7 @@ interface TransactionListProps {
 
 export function TransactionList({className, editable }: TransactionListProps) {
 
-    const [transactions, setTransactions] = useState([] as Transaction[]);
+    const [transactions, setTransactions] = useState([] as GETTransaction[]);
 
     function getTransactions() {
         api.get('/transaction')

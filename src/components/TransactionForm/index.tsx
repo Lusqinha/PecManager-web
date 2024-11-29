@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Transaction, TransactionType } from "@/types/transactions";
+import { POSTTransaction, TransactionType } from "@/types/transactions";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -17,7 +17,7 @@ export function TransactionForm() {
     async function handleSubmit(e: React.FormEvent) {
         e.preventDefault();
 
-        const transaction: Transaction = {
+        const transaction: POSTTransaction = {
             amount: Number(amount),
             category,
             description
