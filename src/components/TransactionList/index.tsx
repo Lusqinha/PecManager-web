@@ -5,7 +5,6 @@ import { Transaction } from "@/types/transactions"
 import { useState, useEffect } from "react"
 import { cn } from "@/lib/utils"
 import { api } from "@/lib/api"
-import { get } from "http"
 
 interface TransactionListProps { 
     className?: string,
