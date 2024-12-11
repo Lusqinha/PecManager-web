@@ -2,6 +2,8 @@
 
 [![GitHub issues](https://img.shields.io/github/issues/Lusqinha/PecManager-web)]()  [![GitHub forks](https://img.shields.io/github/forks/Lusqinha/PecManager-web)]()  [![GitHub stars](https://img.shields.io/github/stars/Lusqinha/PecManager-web)]()  [![GitHub license](https://img.shields.io/github/license/Lusqinha/PecManager-web)]()
 
+![](/docs/pecmanager-header.png)
+
 ## Descrição
 O PecManager é um sistema de gerenciamento de finanças, que permite o controle de entrada e saída de valores, assim como a visualização de seu histórico. O sistema foi desenvolvido com o intuito de facilitar a vida de pequenos empreendedores ou pessoas físicas, para que possam ter um controle e visualização mais efetiva de suas finanças.
 
